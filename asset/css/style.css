@@ -1,0 +1,24 @@
+header{
+    height: 100px;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.backgroung-blue{
+    background-color: blue;
+}
+.backgroung-pink{
+    background-color: pink;
+}
+.backgroung-green{
+    background-color: green;
+}
+
+#content,
+nav{
+    height: calc(100vh - 100px);
+}
+
+#content{
+    overflow: scroll;
+}
