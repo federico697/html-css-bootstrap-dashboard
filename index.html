@@ -6,44 +6,124 @@
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="./asset/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
 
   <body>
-    <div class="vh-100 backgroung-blue">
-      <header>
-        
+    <!-- inizio dell'header -->
+    <div class="vh-100">
+      <header class="d-flex align-items-center">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-2">
+                    <img src="./asset/img/mobile-logo.png" class="d-inline-block d-lg-none img-fluid" alt="">
+                    <img src="./asset/img/logo.svg" class="d-lg-inline-block d-none img-fluid" alt="">
+                </div>
+                <div class="col-8">
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                </div>
+                <div class="col-2 justify-content-around d-flex align-items-center">
+                    <i class="fa-solid fa-list d-lg-inline-block d-none"></i>
+                    <i class="fa-solid fa-circle-question d-lg-inline-block d-none"></i>
+                    <i class="fa-solid fa-ellipsis-vertical d-lg-inline-block d-none"></i>
+                    
+                    <!-- campanella drop -->
+                    <div class="btn-group">
+                        <span type="button" class="" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell text-warning"></i>
+                        </span>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          <li><a class="dropdown-item" href="#">Menu item</a></li>
+                        </ul>
+                      </div>
+                      <!-- fine campanella drop -->
+                </div>
+            </div>
+        </div>
       </header>
+
+      <!-- inizio del main -->
       <main>
         <div class="container-fluid">
           <div class="row d-flex align-items-lg-stretch">
-            <nav class="col-1 backgroung-green">a</nav>
+            <div id="sidebar" class="col-1 d-flex flex-column bg-dark-custom">
+                <div class="text-center text-white">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="d-lg-inline-block d-none">Home</span>                 
+                </div>
+                <div class="text-center text-white">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="d-lg-inline-block d-none">Stats</span> 
+                </div>
+                <div class="text-center text-white">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="d-lg-inline-block d-none">Signals</span>
+                </div>
+                <div class="text-center text-white ">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="d-lg-inline-block d-none">Admin</span>
+                </div>
+            </div>
             <div id="content" class="col-11 backgroung-pink">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt illo, odio placeat doloremque id quaerat natus veritatis, odit laborum, commodi adipisci non animi exercitationem quam iste velit alias assumenda?
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio dignissimos praesentium magni a voluptas recusandae laudantium non. Veniam molestias, cum neque delectus tempora dolores labore explicabo quam error expedita ab!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. A eveniet culpa, voluptate ducimus dolorem porro voluptates debitis eos accusantium voluptatum id. Aliquam praesentium repellendus saepe ea dolores eius obcaecati nostrum!
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum architecto omnis dolorem magni cupiditate quisquam ipsa laboriosam illo doloremque aperiam nesciunt dolore tenetur possimus, odio qui maiores eos delectus itaque.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sed perspiciatis modi. Excepturi eos fuga officiis odit consequuntur et ea est quod, minus mollitia ab tempora ipsa? Molestias, qui temporibus!
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolor ducimus maxime sed eveniet similique hic dolore. Totam, aliquid! Ullam, ducimus est consequatur corrupti sequi dolores ipsum ea aperiam ut?
-              Lorem ipsum, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt illo, odio placeat doloremque id quaerat natus veritatis, odit laborum, commodi adipisci non animi exercitationem quam iste velit alias assumenda?
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio dignissimos praesentium magni a voluptas recusandae laudantium non. Veniam molestias, cum neque delectus tempora dolores labore explicabo quam error expedita ab!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. A eveniet culpa, voluptate ducimus dolorem porro voluptates debitis eos accusantium voluptatum id. Aliquam praesentium repellendus saepe ea dolores eius obcaecati nostrum!
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum architecto omnis dolorem magni cupiditate quisquam ipsa laboriosam illo doloremque aperiam nesciunt dolore tenetur possimus, odio qui maiores eos delectus itaque.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sed perspiciatis modi. Excepturi eos fuga officiis odit consequuntur et ea est quod, minus mollitia ab tempora ipsa? Molestias, qui temporibus!
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolor ducimus maxime sed eveniet similique hic dolore. Totam, aliquid! Ullam, ducimus est consequatur corrupti sequi dolores ipsum ea aperiam ut?
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime itaque, atque ullam voluptate, quis maiores neque quae aspernatur dolorem possimus quia nulla libero animi ad ipsum rerum, laudantium ipsa? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt illo, odio placeat doloremque id quaerat natus veritatis, odit laborum, commodi adipisci non animi exercitationem quam iste velit alias assumenda?
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio dignissimos praesentium magni a voluptas recusandae laudantium non. Veniam molestias, cum neque delectus tempora dolores labore explicabo quam error expedita ab!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. A eveniet culpa, voluptate ducimus dolorem porro voluptates debitis eos accusantium voluptatum id. Aliquam praesentium repellendus saepe ea dolores eius obcaecati nostrum!
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum architecto omnis dolorem magni cupiditate quisquam ipsa laboriosam illo doloremque aperiam nesciunt dolore tenetur possimus, odio qui maiores eos delectus itaque.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sed perspiciatis modi. Excepturi eos fuga officiis odit consequuntur et ea est quod, minus mollitia ab tempora ipsa? Molestias, qui temporibus!
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolor ducimus maxime sed eveniet similique hic dolore. Totam, aliquid! Ullam, ducimus est consequatur corrupti sequi dolores ipsum ea aperiam ut?
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime itaque, atque ullam voluptate, quis maiores neque quae aspernatur dolorem possimus quia nulla libero animi ad ipsum rerum, laudantium ipsa?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt illo, odio placeat doloremque id quaerat natus veritatis, odit laborum, commodi adipisci non animi exercitationem quam iste velit alias assumenda?
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio dignissimos praesentium magni a voluptas recusandae laudantium non. Veniam molestias, cum neque delectus tempora dolores labore explicabo quam error expedita ab!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. A eveniet culpa, voluptate ducimus dolorem porro voluptates debitis eos accusantium voluptatum id. Aliquam praesentium repellendus saepe ea dolores eius obcaecati nostrum!
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum architecto omnis dolorem magni cupiditate quisquam ipsa laboriosam illo doloremque aperiam nesciunt dolore tenetur possimus, odio qui maiores eos delectus itaque.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sed perspiciatis modi. Excepturi eos fuga officiis odit consequuntur et ea est quod, minus mollitia ab tempora ipsa? Molestias, qui temporibus!
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolor ducimus maxime sed eveniet similique hic dolore. Totam, aliquid! Ullam, ducimus est consequatur corrupti sequi dolores ipsum ea aperiam ut?
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime itaque, atque ullam voluptate, quis maiores neque quae aspernatur dolorem possimus quia nulla libero animi ad ipsum rerum, laudantium ipsa? dolor sit amet consectetur adipisicing elit. Sunt maxime itaque, atque ullam voluptate, quis maiores neque quae aspernatur dolorem possimus quia nulla libero animi ad ipsum rerum, laudantium ipsa?
+                <div class="container-fluid px-0">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 bg-primary text-white p-1">
+                            <div class="d-flex">
+                                <h4>Boolean <span class="badge bg-secondary">Piano Blaze</span></h4>
+                            </div>
+                            <div>
+                                <span class="badge bg-secondary">3 app</span>
+                                <i class="fa-solid fa-angles-right"></i>
+                                <span class="badge bg-secondary">app</span>
+                                <span class="badge bg-secondary">app</span>
+                                <span class="badge bg-secondary">app</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 bg-primary text-white p-1">
+                            <div>Studenti online negli ultimi 30 minuti</div>
+                            <div>125</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid my-3 px-0">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 backgroung-pink2 my-2 ">
+                            <div class="my-1">
+                                <div class="d-flex justify-content-between text-black align-items-center border border-success p-2 mb-2 border-opacity-75">
+                                    <div>Prossime Classi</div>
+                                    <div>
+                                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                            <div class="offcanvas-header">
+                                                <h6 class="offcanvas-title" id="offcanvasRightLabel"></h6>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 backgroung-pink3 my-2 ">
+                            <div>lorem</div>
+                        </div>
+                        <div class="col-12 col-lg-8 backgroung-green my-2 ">
+                            <div class="my-1">lorem</div>
+                        </div>
+                        <div class="col-12 col-lg-4 backgroung-green1 my-2 ">
+                            <div>lorem</div>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
         </div>
@@ -52,3 +132,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>
+
+

@@ -1,24 +1,37 @@
 header{
-    height: 100px;
+    height: 70px;
     width: 100%;
-    background-color: blueviolet;
 }
-
-.backgroung-blue{
-    background-color: blue;
+.bg-dark-custom{
+    background-color: #0a1e34;
 }
-.backgroung-pink{
-    background-color: pink;
+.backgroung-white2{
+    background-color: rgb(225, 225, 225);
+}
+.backgroung-pink3{
+    background-color: rgb(235, 123, 142);
 }
 .backgroung-green{
     background-color: green;
 }
+.backgroung-green1{
+    background-color: rgb(107, 216, 107);
+}
 
 #content,
-nav{
-    height: calc(100vh - 100px);
+#sidebar{
+    height: calc(100vh - 70px);
+}
+#sidebar{
+    background-image: url('../img/sidebar-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #content{
     overflow: scroll;
+}
+
+.margin-left-2{
+    margin-left: 1px;
 }
