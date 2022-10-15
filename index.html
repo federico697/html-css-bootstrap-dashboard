@@ -54,21 +54,23 @@
       <main>
         <div class="container-fluid">
           <div class="row d-flex align-items-lg-stretch">
-            <div id="sidebar" class="col-1 d-flex flex-column bg-dark-custom">
-                <div class="text-center text-white">
-                    <i class="fa-solid fa-house"></i>
-                    <span class="d-lg-inline-block d-none">Home</span>                 
+            <div id="sidebar" class="col-1 py-3 d-flex flex-column justify-content-between align-items-center text-white bg-dark-custom">
+                <div>
+                    <div class="mb-2">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="d-lg-inline-block d-none">Home</span>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span class="d-lg-inline-block d-none">Stats</span>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fa-solid fa-signal"></i>
+                        <span class="d-lg-inline-block d-none">Signals</span>
+                    </div>
                 </div>
-                <div class="text-center text-white">
-                    <i class="fa-solid fa-house"></i>
-                    <span class="d-lg-inline-block d-none">Stats</span> 
-                </div>
-                <div class="text-center text-white">
-                    <i class="fa-solid fa-house"></i>
-                    <span class="d-lg-inline-block d-none">Signals</span>
-                </div>
-                <div class="text-center text-white ">
-                    <i class="fa-solid fa-house"></i>
+                <div>
+                    <i class="fa-solid fa-gear"></i>
                     <span class="d-lg-inline-block d-none">Admin</span>
                 </div>
             </div>
@@ -93,182 +95,139 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid my-3 px-0">
+                <!-- cards columns -->
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-lg-8 backgroung-pink2 my-2 ">
-                            <div class="my-1">
-                                <div class="d-flex justify-content-between text-black align-items-center border border-success p-2 mb-2 border-opacity-75">
-                                    <div>Prossime Classi
-                                    </div>
-                                    <div>
-                                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
-                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                                            <div class="offcanvas-header">
-                                                <h6 class="offcanvas-title" id="offcanvasRightLabel"></h6>
-                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                            </div>
-                                            <div class="offcanvas-body">
-                                            </div>
+                        <div class="col-lg-8">
+                            <div class="card">
+                                <div class="card-header d-flex justify-content-between">
+                                    <h2>Prossime Classi</h2>
+                                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
                                         </div>
                                     </div>
                                 </div>
-                                <table class="table">
-                                    <thead>
-                                      <tr>
-                                        <th scope="col"></th>
-                                        <th scope="col">Nome</th>
-                                        <th scope="col">Data Inizio</th>
-                                        <th scope="col">ROI</th>
-                                        <th scope="col">Stato</th>
-                                        <th scope="col">Azioni</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody class="table-group-divider">
-                                      <tr>
-                                        <th scope="row">1</th>
-                                        <td class="col-7">Mark</td>
-                                        <td class="col-2">Otto</td>
-                                        <td class="col-1">@mdo</td>
-                                        <td class="col-1">Otto</td>
-                                        <td class="col-1">Otto</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4 my-2 h-100">
-                            <div>
-                                <div class="card">
-                                    <div class="card-header">
-                                      Todo
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                      <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">An item</li>
-                                      <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">A second item</li>
-                                      <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">A third item</li>
-                                    </ul>
-                                  </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-8 my-2 ">
-                            <div class="my-1">FAQ</div>
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                      Accordion Item #1
-                                    </button>
-                                  </h2>
-                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                      Accordion Item #2
-                                    </button>
-                                  </h2>
-                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                      Accordion Item #3
-                                    </button>
-                                  </h2>
-                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                    </div>
-                                  </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table align-middle">
+                                            <thead>
+                                                <tr>
+                                                  <th scope="col" class="w-50">Nome</th>
+                                                  <th scope="col" class="text-center">Data Inizio</th>
+                                                  <th scope="col" class="text-center">ROI</th>
+                                                  <th scope="col" class="text-center">Stato</th>
+                                                  <th scope="col" class="text-center">Azioni</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <th scope="row">
+                                                    <img src="./asset/img/class-avatar.jpg" class="class-img" alt="">
+                                                    Classe 77</th>
+                                                  <td>15 feb 2021</td>
+                                                  <td>20%</td>
+                                                  <td><span class="badge text-bg-success">done</span></td>
+                                                  <td>
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <img src="./asset/img/class-avatar.jpg" class="class-img" alt="">
+                                                        Classe 77</th>
+                                                    <td>15 feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge text-bg-success">done</span></td>
+                                                    <td>
+                                                      <button type="button" class="btn btn-outline-secondary">
+                                                          <i class="fa-solid fa-pencil"></i>
+                                                      </button>
+                                                      <button type="button" class="btn btn-outline-secondary">
+                                                          <i class="fa-solid fa-trash"></i>
+                                                      </button>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">
+                                                        <img src="./asset/img/class-avatar.jpg" class="class-img" alt="">
+                                                        Classe 77</th>
+                                                    <td>15 feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge text-bg-success">done</span></td>
+                                                    <td>
+                                                      <button type="button" class="btn btn-outline-secondary">
+                                                          <i class="fa-solid fa-pencil"></i>
+                                                      </button>
+                                                      <button type="button" class="btn btn-outline-secondary">
+                                                          <i class="fa-solid fa-trash"></i>
+                                                      </button>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">
+                                                        <img src="./asset/img/class-avatar.jpg" class="class-img" alt="">
+                                                        Classe 77</th>
+                                                    <td>15 feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge text-bg-success">done</span></td>
+                                                    <td>
+                                                      <button type="button" class="btn btn-outline-secondary">
+                                                          <i class="fa-solid fa-pencil"></i>
+                                                      </button>
+                                                      <button type="button" class="btn btn-outline-secondary">
+                                                          <i class="fa-solid fa-trash"></i>
+                                                      </button>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">
+                                                        <img src="./asset/img/class-avatar.jpg" class="class-img" alt="">
+                                                        Classe 77</th>
+                                                    <td>15 feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge text-bg-success">done</span></td>
+                                                    <td>
+                                                      <button type="button" class="btn btn-outline-secondary">
+                                                          <i class="fa-solid fa-pencil"></i>
+                                                      </button>
+                                                      <button type="button" class="btn btn-outline-secondary">
+                                                          <i class="fa-solid fa-trash"></i>
+                                                      </button>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">
+                                                        <img src="./asset/img/class-avatar.jpg" class="class-img" alt="">
+                                                        Classe 77</th>
+                                                    <td>15 feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge text-bg-success">done</span></td>
+                                                    <td>
+                                                      <button type="button" class="btn btn-outline-secondary">
+                                                          <i class="fa-solid fa-pencil"></i>
+                                                      </button>
+                                                      <button type="button" class="btn btn-outline-secondary">
+                                                          <i class="fa-solid fa-trash"></i>
+                                                      </button>
+                                                    </td>
+                                                </tr>
+                                              </tbody>
+                                        </table>
+                                      </div>
                                 </div>
                               </div>
                         </div>
-                        <div class="col-12 col-lg-4 h-100 my-2 ">
-                            <div>
-                                <div class="card">
-                                    <img src="./asset/img/chart.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Card title</h5>
-                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                      <li class="list-group-item">An item</li>
-                                      <li class="list-group-item">A second item</li>
-                                      <li class="list-group-item">A third item</li>
-                                    </ul>
-                                    <div class="card-body">
-                                      <a href="#" class="card-link">Card link</a>
-                                    </div>
-                                  </div>
-                            </div>
-                        </div>
+                        <div class="col-lg-4"></div>
                     </div>
                 </div>
             </div>

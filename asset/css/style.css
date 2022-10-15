@@ -35,3 +35,11 @@ header{
 .margin-left-2{
     margin-left: 1px;
 }
+
+.class-img{
+    max-width: 25px;
+}
+
+td{
+    text-align: center;
+}
